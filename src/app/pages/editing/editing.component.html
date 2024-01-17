@@ -1,0 +1,13 @@
+<div class="edit-container">
+    <div class="edit-note">
+        <form (ngSubmit)="editNote()" class="form-note">
+            <div class="form-info">
+              <label for="name">Введите новую заметку для дневника:</label>
+              <textarea name="description" cols="100" rows="5" [(ngModel)]="description"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Сохранить" />
+            </div>
+          </form>
+    </div>
+</div>

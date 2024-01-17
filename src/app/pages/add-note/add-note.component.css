@@ -1,0 +1,27 @@
+.add-container {
+    background-color: aqua;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 20px;
+}
+
+.add-note {
+    text-align: center;
+}
+
+.form-note {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.form-info textarea {
+    resize: none;
+}

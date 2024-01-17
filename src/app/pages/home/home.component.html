@@ -1,0 +1,13 @@
+<div class="container">
+
+    <button (click)="addNote()" class="btn-create">Создать</button>
+
+    <div class="notes">
+    <app-note
+        *ngFor="let note of notes; let i = index"
+        [note]="note"
+        (delete)="deleteNote($event)"
+        (editing)="editingNote(note)"
+    ></app-note>
+    </div>
+</div>

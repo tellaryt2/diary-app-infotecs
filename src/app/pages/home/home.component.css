@@ -1,0 +1,14 @@
+.container {
+    background-color: aqua;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 20px;
+}
+
+.btn-create {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 0.3px;
+    margin-bottom: 10px;
+}

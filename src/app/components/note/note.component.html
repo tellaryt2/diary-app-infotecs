@@ -1,0 +1,26 @@
+<div class="note-card">
+
+    <div class="note-nav">
+        <div class="note-nav__date">
+            <p>время создания/редактирования:</p>
+             <p>
+                {{note.day}}
+                {{note.month}}
+                {{note.year}} /
+                {{note.hour}}:
+                {{note.minutes}}:
+                {{note.second}}
+                
+            </p> 
+        </div>
+
+        <div class="note-nav__btn">
+            <button (click)="onEditing()" class="note-btn">Редактировать</button>
+            <button (click)="onDelete()" class="note-btn">Удалить</button>
+        </div>
+    </div>
+    
+    <div class="container-note">
+        <p>{{note.description}}</p>
+    </div>
+</div>
