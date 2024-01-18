@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Запуск приложения
 
-+ Для запуска приложения необходимо иметь nodeJs, а так же уставновленные пакеты angular, если нету: `npm install -g @angular/cli`.
++ Для запуска приложения необходимо иметь nodeJs, а так же установленные пакеты angular, если нету: `npm install -g @angular/cli`.
 + Склонировать репозиторий на локальную машину
 + установить пакеты npm в папку репозитория `npm install`
 + Запустить приложение: `ng serve`, перейти по адресу: `http://localhost:4200/`
@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 + Добавление, удаление и редактирование записок
 + Сортировка заметок
 + Машрутизация по приложению
-+ Прикрепление изображений к запискам
++ Прикрепление изображений к запискам с помощью библиотеки primeNg
 
 ## О приложении
 
