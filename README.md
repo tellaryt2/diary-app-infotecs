@@ -2,26 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
-## Development server
+## Запуск приложения
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
++ Для запуска приложения необходимо иметь nodeJs, а так же уставновленные пакеты angular, если нету: `npm install -g @angular/cli`.
++ Склонировать репозиторий на локальную машину
++ установить пакеты npm в папку репозитория `npm install`
++ Запустить приложение: `ng serve`, перейти по адресу: `http://localhost:4200/`
 
-## Code scaffolding
+## Реализованные цели
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
++ Отображение списка всех записок дневника
++ Форматирование текста
++ Добавление, удаление и редактирование записок
++ Сортировка заметок
++ Машрутизация по приложению
++ Прикрепление изображений к запискам
 
-## Build
+## О приложении
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Веб-приложение "личный дневник". Позволяет создавать личные записки. Изначально в приложении есть только кнопка "создать", при нажатии происходит
+переход на страницу добавления записки. У самой записки есть: данные о времени создания, текст записки, возможность удалить или редактировать ее,
+возможность прикрепить изображение к ней. При редактировании происходит переход на страницу редактирования, где можно изменить текст записки. При
+добавлении картинки, открывается проводник операционной системы для выбора изображения. Данные сохраняются при перезаходе, так как они хранятся
+в localstorage браузера.
