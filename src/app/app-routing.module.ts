@@ -4,6 +4,9 @@ import { AddNoteComponent } from './pages/add-note/add-note.component';
 import { HomeComponent } from './pages/home/home.component';
 import { EditingComponent } from './pages/editing/editing.component';
 
+/**
+ * путь роутинга по приложению
+ */
 const routes: Routes = [
   {
     path: '',

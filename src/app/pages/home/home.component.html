@@ -6,8 +6,9 @@
     <app-note
         *ngFor="let note of notes; let i = index"
         [note]="note"
-        (delete)="deleteNote($event)"
         (editing)="editingNote(note)"
+        (deletePicture)="deletePicture(note)"
+        (imageUpload)="updateNotePicture($event)"
     ></app-note>
     </div>
 </div>

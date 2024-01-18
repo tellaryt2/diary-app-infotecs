@@ -10,8 +10,4 @@ export class AppComponent {
   title = 'diary-app';
 
   constructor(private router:Router) {}
-
-  addNote() {
-    this.router.navigate(['add-note']);
-  }
 }

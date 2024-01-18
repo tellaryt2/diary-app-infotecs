@@ -10,17 +10,34 @@
                 {{note.hour}}:
                 {{note.minutes}}:
                 {{note.second}}
-                
             </p> 
+        </div>
+
+        <div class="note-nav__btn-style">
+            <button (click)="changeStyleItalic()"><i>I</i></button>
+            <Button (click)="changeStyleBold()"><b>I</b></Button>
+            <Button (click)="changeStyleUnderline()"><u>I</u></Button>
         </div>
 
         <div class="note-nav__btn">
             <button (click)="onEditing()" class="note-btn">Редактировать</button>
-            <button (click)="onDelete()" class="note-btn">Удалить</button>
+            <button (click)="deleteNote()" class="note-btn">Удалить</button>
         </div>
     </div>
     
     <div class="container-note">
-        <p>{{note.description}}</p>
+
+        <p
+        [ngClass]="{
+            'isItalic': isItalic,
+            'isBold': isBold,
+            'isUnderline': isUnderline
+        }"
+        >{{note.description}}</p>
+        <div class="note-img">
+            <img [src]="note.picture" *ngIf="note.picture" width="100px" height="100px"/>
+            <input type="file" title="изображение" style="color:transparent;" (change)="onFileChange($event)" *ngIf="!note.picture"  accept="image/*"/>
+            <button *ngIf="note.picture" (click)="onDeletePicture()" class="note-img__btn">x</button>
+        </div>
     </div>
 </div>

@@ -1,9 +1,10 @@
 .add-container {
-    background-color: aqua;
+    background-color: rgb(151, 149, 149);
     padding: 10px;
     margin: 0 auto;
     max-width: 900px;
     border-radius: 20px;
+    border: solid 0.3px;
 }
 
 .add-note {
@@ -24,4 +25,9 @@
 
 .form-info textarea {
     resize: none;
+}
+
+.add-note__btn {
+    display: flex;
+    justify-content: space-between;
 }

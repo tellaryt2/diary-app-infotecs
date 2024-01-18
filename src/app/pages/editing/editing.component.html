@@ -2,10 +2,11 @@
     <div class="edit-note">
         <form (ngSubmit)="editNote()" class="form-note">
             <div class="form-info">
-              <label for="name">Введите новую заметку для дневника:</label>
+              <p>Введите новую заметку для дневника:</p>
               <textarea name="description" cols="100" rows="5" [(ngModel)]="description"></textarea>
             </div>
-            <div>
+            <div class="edit-note__btn">
+              <button (click)="backToPage()">Назад</button>
               <input type="submit" value="Сохранить" />
             </div>
           </form>
